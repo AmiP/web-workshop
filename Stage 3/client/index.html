@@ -1,0 +1,23 @@
+<html ng-app="myApp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body ng-controller="MyController">
+    
+    <h1>Learn New Words</h1>
+
+    <div ng-repeat="w in words"> {{w.word}} </div>
+
+    <div>
+      <input ng-model="newWord">
+      <button ng-click="saveThisWord()">Save</button>
+      <button ng-click="getSavedWords()">Update List</button>
+    </div>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
